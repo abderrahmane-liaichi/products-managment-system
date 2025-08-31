@@ -128,7 +128,7 @@ function clearWarrningMSG(){
 // count warrning function
 function countWrrning(){
     if(count.value <= 100){
-        count.placeholder = 'Price'
+        count.placeholder = 'Count'
         count.classList.remove('warrning');
     } else{
         count.value = ''
@@ -269,3 +269,4 @@ function searchData(value){
 let screenQuiz = document.getElementById('secreen-quiz');
 let movmentQuiz = document.getElementById('movment-quiz');
 // clean data
+
