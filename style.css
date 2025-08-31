@@ -155,23 +155,15 @@ a{
         width: 100%;
     } 
     .price{
-        width: 100%;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2 ,1fr);
         grid-column-gap: 10px;
-    }
-    .mobile-resp small{
         width: 100%;
-        text-align: center;
     }
-    .mobile-resp{
-        width: 100%;
-        display: flex;
-        justify-content:  center;
-        align-items: center;
+    .iteam5 {
+        grid-column: 1 / span 2 ;
         margin-bottom: 10px;
     }
-
     table {
         width: 100%;
         font-size: 10px;
@@ -186,11 +178,8 @@ a{
     .inputs button, .outputs .bothbtn button, #deleteall button{
         font-size: 12px;
     }
-    .total{
-        display: none;
-    }
     footer div{
-        font-size: 12px;
+        font-size: 11px;
     }
 
 }
@@ -207,4 +196,22 @@ a{
     }
 
 
+}
+footer{
+    height: 30px;
+    background-color: #01102b;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8797de;
+    transition: 1.9s ease;
+}
+footer:hover{
+    background-color: #8797de;
+    color: #01102b;
 }
