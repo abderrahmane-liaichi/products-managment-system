@@ -208,18 +208,3 @@ a{
 
 
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #01102b;
-    height: 30px;
-    color: #8797de;
-}
