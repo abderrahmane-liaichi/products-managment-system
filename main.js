@@ -233,11 +233,11 @@ function searchData(value){
                     <td>${i+1}</td>
                     <td>${dataPro[i].title}</td>
                     <td>${dataPro[i].price}</td>
-                    <td>${dataPro[i].taxes}</td>
-                    <td>${dataPro[i].ads}</td>
-                    <td>${dataPro[i].discount}</td>
+                    <td id='ipad' class="mobile">${dataPro[i].taxes}</td>
+                    <td id='ipad' class="mobile">${dataPro[i].ads}</td>
+                    <td class="mobile">${dataPro[i].discount}</td>
                     <td>${dataPro[i].total}</td>
-                    <td>${dataPro[i].category}</td>
+                    <td class="mobile">${dataPro[i].category}</td>
                     <td onclick='deleteIteam(${i})' class="trans"><button>Delete</button></td>
                     <td onclick='updateIteam(${i})' class="trans"><button>Update</button></td>
                 </tr>     `
@@ -269,4 +269,5 @@ function searchData(value){
 let screenQuiz = document.getElementById('secreen-quiz');
 let movmentQuiz = document.getElementById('movment-quiz');
 // clean data
+
 
