@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Managment System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg">
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h2>cruds</h2>
+            <p>create read update <span>delete serach</span></p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Title" id="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+                <small class='total' id="total"></small>
+            </div>
+            <div class="mobile-resp">
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="Count" id="count">
+            <input type="text" placeholder="Category" id="category">
+            <button id="create">Create</button>
+        </div>
+        <div class="outputs">
+            <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+            <div class="bothbtn">
+                <button onclick="getSearchMood(this.id)" id="searchbytitle">Search By Title</button>
+                <button onclick="getSearchMood(this.id)" id="searchbycategory">Search By Category</button>
+            </div>
+            <div id="deleteall">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th id="ipad" class="mobile">taxes</th>
+                    <th id="ipad" class="mobile">ads</th>
+                    <th class="mobile">discount</th>
+                    <th>total</th>
+                    <th class="mobile">Category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>© 2025 | All rights reserved by Abderrahmane Liaichi</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
