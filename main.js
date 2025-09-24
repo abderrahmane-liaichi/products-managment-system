@@ -266,9 +266,7 @@ function searchData(value){
 }
 
 
-let screenQuiz = document.getElementById('secreen-quiz');
-let movmentQuiz = document.getElementById('movment-quiz');
-// clean data
+
 
 
 
